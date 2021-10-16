@@ -16,12 +16,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          cache: 'npm'
-
-      - name: install dependencies
-        run: |
-          npm install
-          npm test
 
       - name: Setup Hexo
         env:
@@ -34,6 +28,8 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "me@edlison.com"
           git config --global user.name "edlison"
+          npm install hexo-cli -g
+          npm install
 
       - name: Deploy
         run: |
