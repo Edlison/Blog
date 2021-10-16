@@ -7,19 +7,21 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to deploy blog.
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        ref: main
-    
-    - name: Setup Node.js
-        uses: actions/setup-node@v1
+      - name: Checkout source
+        uses: actions/checkout@v2
         with:
-          node-version: '12'
+          ref: master
+
+      - name: Setup nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+        run: npm install
+        run: npm test
 
       - name: Setup Hexo
         env:
-          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY }}
         run: |
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
@@ -27,12 +29,9 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "me@edlison.com"
-          git config --global user.name "Edlison"
-          npm install hexo-cli -g
-          npm install
+          git config --global user.name "edlison"
 
       - name: Deploy
         run: |
           hexo clean
           hexo deploy
-
