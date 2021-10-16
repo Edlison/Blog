@@ -1,7 +1,7 @@
 ---
 title: Dropout
 categories:
-- Deeplearning
+- Deep Learning
 ---
 
 # Dropout Layer

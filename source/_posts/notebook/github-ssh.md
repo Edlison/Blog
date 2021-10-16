@@ -1,5 +1,5 @@
 ---
-title: Github SSH-key
+title: Github SSH-Key
 categories:
 - Notebook
 tags:

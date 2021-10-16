@@ -1,7 +1,7 @@
 ---
 title: Batch Normalization
 categories:
-- Deeplearning
+- Deep Learning
 ---
 
 # Batch Normalization Layer

@@ -1,7 +1,7 @@
 ---
 title: Terms in Deep Learning
 categories:
-- Deeplearning
+- Deep Learning
 ---
 
 # Term

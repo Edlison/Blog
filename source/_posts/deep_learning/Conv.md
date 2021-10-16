@@ -1,7 +1,7 @@
 ---
 title: Convolutional Neural Network
 categories:
-- Deeplearning
+- Deep Learning
 tags:
 - conv
 ---

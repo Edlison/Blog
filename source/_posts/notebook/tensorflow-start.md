@@ -5,7 +5,6 @@ catagories:
 tags:
 - python
 - tensorflow
-- deeplearning
 ---
 
 # 训练流程

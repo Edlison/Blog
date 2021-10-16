@@ -63,3 +63,7 @@ https://easyai.tech/ai-definition/transformer/
 
 Attention
 https://easyai.tech/ai-definition/attention/
+
+EncoderDecoder Seq2Seq
+
+https://easyai.tech/ai-definition/encoder-decoder-seq2seq/

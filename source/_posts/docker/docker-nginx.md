@@ -28,7 +28,7 @@ services:
 
 nginx默认的html文件夹在`/usr/share/nginx/html`
 
-不过可以通过指定root来将根目录换到`/etc/www/html`下
+不过可以通过指定conf中的root来将根目录换到`/etc/www/html`下
 
 # nginx.conf
 
