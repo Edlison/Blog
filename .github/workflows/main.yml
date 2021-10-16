@@ -10,7 +10,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
 
       - name: Setup nodejs
         uses: actions/setup-node@v2
