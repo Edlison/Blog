@@ -48,8 +48,6 @@ services:
   x-ui:
     image: stilleshan/x-ui
     container_name: x-ui
-    restart: always
-    network_mode: host
     volumes:
       - ./config:/etc/x-ui
       - ./ssl:/ssl
