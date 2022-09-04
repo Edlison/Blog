@@ -14,6 +14,7 @@ version: '3.1'
 services:
   db:
     image: mariadb
+    container_name: mariadb
     restart: always
     ports:
       - 3306:3306
@@ -24,6 +25,7 @@ services:
     
   adminer:
     image: adminer
+    container_name: adminer
     restart: always
     depends_on:
       - db

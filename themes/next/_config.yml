@@ -503,7 +503,7 @@ math:
   every_page: true
 
   mathjax:
-    enable: false
+    enable: true
 
   katex:
     enable: false
