@@ -38,6 +38,7 @@ fdisk /dev/sdb  # 分区
 ```sh
 mkfs.ext4 /dev/sdb
 ```
+这里应该是`/dev/sdb1`
 
 3. 挂载
 
@@ -46,6 +47,8 @@ mkfs.ext4 /dev/sdb
    ```sh
    mount -t ext4 /dev/sdb /mnt/slab
    ```
+
+   这里应该是`/dev/sdb1`
 
    重启会失效
 
