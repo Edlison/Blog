@@ -7,14 +7,4 @@ categories:
 
 Manipulation of space
 
-
-$$\alpha$$
-
-
-
-```
-x_i^2
-```
-
-$$x_a$$
-
+$$A=U\Sigma V'$$
